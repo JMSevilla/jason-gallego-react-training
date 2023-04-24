@@ -1,6 +1,7 @@
 import React from 'react'
-import { ControlledAppBar, ControlledCard, ControlledContainer, ControlledTextField, ControlledButton } from '../../components'
+import { ControlledAppBar, ControlledCard, ControlledContainer, ControlledTextField, ControlledButton, ControlledChip, ControlledTypography } from '../../components'
 import { Typography, Button } from '@mui/material'
+
 /**
  * Parent Node, Children Node
  * @returns 
@@ -17,7 +18,10 @@ const Home = () => {
             }}
             >
                 <ControlledCard>
-                    <Typography variant='h6'>User Form</Typography>
+                    <ControlledTypography 
+                        variant='h6'
+                        label='User Form'
+                    />
                     <ControlledTextField 
                         style={{
                             marginTop: '10px',
